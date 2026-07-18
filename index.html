@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoSolution | Venta y Maquila de Aceite para Motocicleta · Cobertura Nacional</title>
+  <meta name="description" content="Aceite para motocicleta de marcas reconocidas (Motul, Castrol, Mobil, Repsol, Yamalube y más) y maquila de aceite con tu propia marca en envase transparente. Certificación NOM 116-SCFI-2018. Cobertura a todo México. Cotiza por WhatsApp.">
+  <meta name="keywords" content="aceite para motocicleta, maquila de aceite, marca propia aceite motocicleta, private label aceite motor, aceite Motul, aceite Castrol, aceite Mobil moto, Yamalube, venta de aceite mayoreo México, HB Power Oil, NOM 116-SCFI-2018">
+  <meta property="og:title" content="MotoSolution | Venta y Maquila de Aceite para Motocicleta">
+  <meta property="og:description" content="Aceite de marcas reconocidas y maquila con tu propia marca, en envase transparente. Cobertura a todo México, cotiza por WhatsApp.">
+  <meta property="og:image" content="imagenes/hb-power-oil-frontal.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Graceful degradation: without JS, the loader/reveal states never get
+       unlocked by main.js, so force everything visible. -->
+  <noscript>
+    <style>
+      #loader{ display:none !important; }
+      .reveal, .hero-badge, .hero-sub, .hero-ctas, .hero-trust{ opacity:1 !important; transform:none !important; }
+      .hero-title .line > span{ opacity:1 !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-word">Moto<span class="lw-accent">Solution</span></div>
+    <div class="loader-ring"></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="MotoSolution — inicio">
+          <span class="nav-wordmark">Moto<span class="wm-accent">Solution</span><span class="wm-dot">.</span></span>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#ambientes">Marcas</a></li>
+            <li><a href="#maquila">Maquila</a></li>
+            <li><a href="#sectores">Cobertura</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/524435342127?text=Hola%2C%20quiero%20cotizar%20aceite%20para%20motocicleta%20o%20el%20servicio%20de%20maquila."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-primary nav-cta btn-sm">
+          Cotizar por WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nosotros</a>
+      <a href="#ambientes">Marcas</a>
+      <a href="#maquila">Maquila</a>
+      <a href="#sectores">Cobertura</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/524435342127?text=Hola%2C%20quiero%20cotizar%20aceite%20para%20motocicleta%20o%20el%20servicio%20de%20maquila." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image -->
+      <div class="hero-bg" data-speed="0.12" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1683455425959-8f5bf1e8fbfb?q=80&w=1800&auto=format&fit=crop');"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Venta de Aceite de Marca · Maquila con Tu Marca · Cobertura Nacional
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Aceite de motor</span></span>
+            <span class="line"><span>que no esconde</span></span>
+            <span class="line"><span class="accent">nada.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            En <strong>MotoSolution</strong> vendemos aceite para motocicleta de marcas reconocidas —Motul, Castrol, Mobil, Repsol y más— y maquilamos aceite con <strong>tu propia marca</strong> en envase transparente, para que veas exactamente lo que estás comprando. Cotiza y recibe en cualquier punto de México.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/524435342127?text=Hola%2C%20quiero%20cotizar%20aceite%20para%20motocicleta%20o%20el%20servicio%20de%20maquila."
+               target="_blank" rel="noopener noreferrer" class="btn-primary">
+              Cotizar por WhatsApp
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-droplet" style="font-size:15px; color:var(--gold);"></i>
+              Ver Marcas y Maquila
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-certificate"></i>
+              NOM 116-SCFI-2018
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-truck-fast"></i>
+              Entrega a todo México
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-eye"></i>
+              Envase 100% transparente
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE — marcas que manejamos
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-label="Marcas de aceite que comercializamos">
+      <div class="marquee-inner" id="marquee">
+        <span class="marquee-item"><span>MOTUL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>YAMALUBE</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>REPSOL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>CASTROL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>MOBIL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>ZEHN</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>NEXOIL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>AKRON</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>WAPE MEX</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <!-- duplicate set for seamless loop -->
+        <span class="marquee-item"><span>MOTUL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>YAMALUBE</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>REPSOL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>CASTROL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>MOBIL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>ZEHN</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>NEXOIL</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>AKRON</span><span class="marquee-dot" aria-hidden="true"></span></span>
+        <span class="marquee-item"><span>WAPE MEX</span><span class="marquee-dot" aria-hidden="true"></span></span>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — La diferencia
+    ══════════════════════════════════════════════════ -->
+    <section id="why" class="bg-section" aria-labelledby="why-heading">
+      <div class="section-bg" data-speed="0.15" aria-hidden="true" style="background-image:url('https://images.pexels.com/photos/13065696/pexels-photo-13065696.jpeg?auto=compress&cs=tinysrgb&w=1800');"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+      <canvas data-particles aria-hidden="true" class="particle-layer"></canvas>
+
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué MotoSolution</div>
+            <h2 class="why-quote" id="why-heading">
+              No cualquier proveedor te deja ver lo que compras…
+              <em>nosotros sí.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos venta de aceite de marcas reconocidas con nuestro propio servicio de maquila: fabricamos aceite con tu marca, en un envase transparente que respalda cada litro que vendes.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Marcas Reconocidas</h3>
+            <p>Motul, Castrol, Mobil, Repsol, Yamalube, Zehn, Nexoil, Akron y Wape Mex: aceite en el que tus clientes ya confían.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-tag"></i>
+            </div>
+            <h3>Maquila con Tu Marca</h3>
+            <p>Ponemos tu logo y tu etiqueta sobre el envase. Vendes aceite con tu propia identidad, sin fabricarlo tú mismo.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3>Envase Transparente</h3>
+            <p>Nuestro envase deja ver el color, la transparencia y la consistencia del aceite. Nada se esconde detrás de un frasco opaco.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Cobertura Nacional</h3>
+            <p>Sin tienda física, pero con entrega a cualquier punto de México. Cotizas y coordinas todo por WhatsApp.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Líneas de negocio + marcas
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Lo que hacemos</div>
+            <h2 class="section-title" id="amb-heading">
+              Dos formas de trabajar<br>
+              <span class="gold">con nosotros</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Compra aceite de marca lista para vender, o crea tu propia línea con nuestro servicio de maquila.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesita tu negocio?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Venta de marca -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="imagenes/nexoil-racing-20w50.jpeg"
+              alt="Lata de aceite Nexoil Racing 20W-50 para motocicleta, una de las marcas reconocidas que vende MotoSolution">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-droplet" style="color:#e8e8e8;"></i>
+              </div>
+              <h3>Venta de Aceite de Marca</h3>
+              <p>Motul, Castrol, Mobil, Repsol, Yamalube, Zehn, Nexoil, Akron y Wape Mex, listos para surtir tu taller o refaccionaria.</p>
+              <div class="amb-temp">Marcas Reconocidas</div>
+            </div>
+          </div>
+
+          <!-- Maquila -->
+          <div class="amb-card is-featured reveal d1">
+            <img class="amb-img"
+              src="imagenes/hb-power-oil-etiqueta-trasera.jpeg"
+              alt="Envase transparente de aceite HB Power Oil con etiqueta trasera visible, ejemplo del servicio de maquila de MotoSolution">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(226,35,26,0.18); border-color:rgba(226,35,26,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-tag" style="color:#ff8a7d;"></i>
+              </div>
+              <h3>Maquila / Marca Propia</h3>
+              <p>Fabricamos aceite con tu logo sobre un envase transparente. Ideal para talleres, refaccionarias y marcas emergentes.</p>
+              <div class="amb-temp">Servicio Destacado</div>
+            </div>
+          </div>
+
+          <!-- Cobertura nacional -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1594966345302-2b954c02098f?q=80&w=1200&auto=format&fit=crop"
+              alt="Motociclistas circulando en carretera abierta al atardecer, representando la cobertura de entrega a nivel nacional de MotoSolution">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(212,160,23,0.18); border-color:rgba(212,160,23,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-map-location-dot" style="color:var(--gold);"></i>
+              </div>
+              <h3>Cobertura Nacional</h3>
+              <p>Sin sucursal física: operamos 100% remoto y enviamos a cualquier estado del país, todo coordinado por WhatsApp.</p>
+              <div class="amb-temp">Todo México</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Brand grid -->
+        <div class="brand-grid-wrap reveal" style="margin-top:70px;">
+          <h3 style="font-family:var(--font-display); font-size:18px; color:var(--white); margin-bottom:24px;">
+            Marcas que manejamos
+          </h3>
+          <div class="brand-grid" role="list" aria-label="Marcas de aceite disponibles">
+
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/brand-motul.png" alt="Aceite Motul 5000 4T 20W-50 para motocicleta" loading="lazy">
+              <span>Motul</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/brand-yamalube.jpg" alt="Aceite Yamalube para motocicleta Yamaha" loading="lazy">
+              <span>Yamalube</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/brand-repsol.jpg" alt="Aceite Repsol Moto Town Plus 20W-50 para motocicleta" loading="lazy">
+              <span>Repsol</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/brand-castrol.jpg" alt="Aceite Castrol Actevo para motocicleta" loading="lazy">
+              <span>Castrol</span>
+            </div>
+            <div class="brand-card brand-card--text" role="listitem">
+              <span class="brand-wordmark">Mobil<br>Super Moto</span>
+              <span>Mobil</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/brand-zehn.jpg" alt="Aceite Zehn Moto 3000RLD 20W-50 para motocicleta" loading="lazy">
+              <span>Zehn</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/nexoil-racing-20w50.jpeg" alt="Aceite Nexoil Racing para motocicleta" loading="lazy">
+              <span>Nexoil</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/brand-akron.png" alt="Aceite Akron para motocicleta" loading="lazy">
+              <span>Akron</span>
+            </div>
+            <div class="brand-card" role="listitem">
+              <img src="imagenes/wape-mex-sintetico-20w50.jpeg" alt="Aceite Wape Mex Sintético 20W-50 4T para motocicleta" loading="lazy">
+              <span>Wape Mex</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo trabajamos
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" class="bg-section" aria-labelledby="proceso-heading">
+      <div class="section-bg" data-speed="0.15" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1720811559395-3ed8d1b16649?q=80&w=1800&auto=format&fit=crop');"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, claro y <span class="gold">sin sorpresas</span>
+          </h2>
+          <p>De la cotización a la entrega, así trabajamos cada pedido de aceite de marca o de maquila.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">01</div>
+            <h3>Cotización por WhatsApp</h3>
+            <p>Cuéntanos si buscas aceite de marca o maquila con tu propio logo. Te respondemos directo, sin intermediarios.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">02</div>
+            <h3>Definición Clara</h3>
+            <p>Litros, marca o maquila, y tiempos de entrega: todo se define antes de mover un solo pedido.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">03</div>
+            <h3>Entrega a Todo México</h3>
+            <p>Coordinamos el envío a cualquier punto del país. Recibes tu pedido listo para vender.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MAQUILA — Marca propia (servicio destacado)
+    ══════════════════════════════════════════════════ -->
+    <section id="maquila" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Maquila / Marca Propia</div>
+            <h2 class="section-title" id="prod-heading">
+              Tu marca, en cada<br>
+              <span class="gold">envase que vendes</span>
+            </h2>
+            <p class="producto-lead">
+              MotoSolution maquila aceite para motocicleta bajo tu propia marca: tú pones el logo y la etiqueta, nosotros ponemos la fabricación, el envase transparente y la calidad detrás. Así nace <strong style="color:var(--white);">HB Power Oil</strong>, nuestra propia línea y ejemplo real del nivel con el que trabajamos cada maquila.
+            </p>
+
+            <ul class="feature-rows" aria-label="Qué incluye el servicio de maquila">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-tag"></i></div>
+                <div>
+                  <h4>Marca Propia (Private Label)</h4>
+                  <p>Tu logo y tu etiqueta sobre el envase. Vendes aceite con tu identidad, sin instalar una planta de producción.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+                <div>
+                  <h4>Envase 100% Transparente</h4>
+                  <p>Tus clientes ven el color, la transparencia y la consistencia del aceite antes de comprarlo: algo que un envase opaco no puede ofrecer.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+                <div>
+                  <h4>Calidad Certificada</h4>
+                  <p>Trabajamos bajo la norma NOM 116-SCFI-2018 para lubricantes, la misma que respalda a HB Power Oil, nuestra marca de referencia.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-pallet"></i></div>
+                <div>
+                  <h4>Producción por Volumen</h4>
+                  <p>Manejamos pedidos por tarima desde 1,000 litros. Cotiza tu volumen y precio exacto por WhatsApp.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Datos del servicio de maquila">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Transparente</span>
+                <span class="spec-name">Tipo de envase</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Tu Marca</span>
+                <span class="spec-name">Etiqueta personalizada</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">1,000 L</span>
+                <span class="spec-name">Pedido mínimo (tarima)</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">$55 MXN*</span>
+                <span class="spec-name">Precio de referencia</span>
+              </div>
+            </div>
+            <p class="specs-footnote">
+              *Precio de referencia por litro dentro de pedido por tarima de 1,000 L. Precio final sujeto a confirmación por WhatsApp.
+            </p>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <img class="led-panel-body"
+                   src="imagenes/hb-power-oil-frontal.jpeg"
+                   alt="Envase transparente de aceite HB Power Oil, ejemplo real del servicio de maquila con marca propia de MotoSolution">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Envase transparente
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-certificate" style="color:var(--gold);"></i>
+                NOM 116-SCFI-2018
+              </div>
+            </div>
+            <div class="maquila-ref">
+              <img src="imagenes/hb-power-oil-isotipo.jpeg" alt="Etiqueta de HB Power Oil, marca propia de referencia maquilada por MotoSolution">
+              <p><strong>HB Power Oil</strong> — "La mejor decisión en lubricación". Nuestra propia línea, ejemplo real de calidad de maquila.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONFIANZA
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" class="bg-section" aria-label="Compromiso de servicio">
+      <div class="section-bg" data-speed="0.12" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1768689033119-c3ac1e437d20?q=80&w=1800&auto=format&fit=crop');"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Transparencia</div>
+            <div class="stat-lbl">Envase transparente<br>en cada pedido</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Cobertura</div>
+            <div class="stat-lbl">Entrega a todo<br>el país</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Certificación</div>
+            <div class="stat-lbl">NOM 116-SCFI-2018<br>en producto</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Atención</div>
+            <div class="stat-lbl">Respuesta directa<br>por WhatsApp</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES — A quién atendemos
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">A quién atendemos</div>
+          <h2 class="section-title" id="sec-heading">
+            Hecho para tu <span class="gold">negocio</span>
+          </h2>
+          <p>Aceite de marca y maquila con marca propia para negocios que mueven aceite para motocicleta en todo México.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-screwdriver-wrench sector-icon" aria-hidden="true"></i>
+            <h3>Talleres Mecánicos</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-warehouse sector-icon" aria-hidden="true"></i>
+            <h3>Refaccionarias</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-truck-field sector-icon" aria-hidden="true"></i>
+            <h3>Distribuidores Mayoristas</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-rocket sector-icon" aria-hidden="true"></i>
+            <h3>Marcas Emergentes</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" class="bg-section" aria-labelledby="contact-heading">
+      <div class="section-bg" data-speed="0.12" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1585063981930-427559bc7920?q=80&w=1800&auto=format&fit=crop');"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+      <canvas data-particles aria-hidden="true" class="particle-layer"></canvas>
+
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu pedido</span>
+          </h2>
+          <p>Aceite de marca o maquila con tu logo: cuéntanos qué necesitas y te respondemos directo por WhatsApp.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Directa</h3>
+            <p class="ci-sub">MotoSolution — venta y maquila de aceite para motocicleta, con cobertura a todo México.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <a href="https://wa.me/524435342127?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20aceites%20y%20el%20servicio%20de%20maquila." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat → 443 534 2127
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Llamada Directa</h4>
+                  <p><a href="tel:+524435342127">443 534 2127</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Cobertura</h4>
+                  <p>Entrega a todo México. Operación 100% remota, sin tienda física.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Certificación</h4>
+                  <p>Producto respaldado por la norma NOM 116-SCFI-2018.</p>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Quick options -->
+          <div class="contact-options">
+            <h3>¿Qué buscas?</h3>
+            <p>Elige una opción y te llevamos directo a WhatsApp con tu mensaje listo.</p>
+
+            <a class="opt-card" href="https://wa.me/524435342127?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20aceites%20de%20marca%20reconocida." target="_blank" rel="noopener noreferrer">
+              <div class="opt-icon" aria-hidden="true"><i class="fa-solid fa-droplet"></i></div>
+              <div class="opt-body">
+                <h4>Aceite de Marca</h4>
+                <p>Motul, Castrol, Mobil, Repsol y más</p>
+              </div>
+              <i class="fa-solid fa-arrow-right opt-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a class="opt-card" href="https://wa.me/524435342127?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20maquila%20%2F%20marca%20propia." target="_blank" rel="noopener noreferrer">
+              <div class="opt-icon" aria-hidden="true"><i class="fa-solid fa-tag"></i></div>
+              <div class="opt-body">
+                <h4>Maquila / Marca Propia</h4>
+                <p>Fabricamos aceite con tu logo</p>
+              </div>
+              <i class="fa-solid fa-arrow-right opt-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a class="opt-card" href="https://wa.me/524435342127?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20MotoSolution." target="_blank" rel="noopener noreferrer">
+              <div class="opt-icon" aria-hidden="true"><i class="fa-solid fa-message"></i></div>
+              <div class="opt-body">
+                <h4>Otra Duda</h4>
+                <p>Cualquier otra pregunta</p>
+              </div>
+              <i class="fa-solid fa-arrow-right opt-arrow" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-wordmark">Moto<span class="wm-accent">Solution</span></div>
+        <p class="footer-tag">Venta y Maquila de Aceite para Motocicleta · Cobertura Nacional</p>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> MotoSolution. Todos los derechos reservados.
+        </p>
+        <p class="footer-wa">
+          WhatsApp: <a href="https://wa.me/524435342127" target="_blank" rel="noopener noreferrer">443 534 2127</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/524435342127?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20aceites%20y%20el%20servicio%20de%20maquila."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
